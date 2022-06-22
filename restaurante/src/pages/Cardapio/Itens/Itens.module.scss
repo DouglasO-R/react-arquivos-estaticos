@@ -1,0 +1,10 @@
+@import "styles/variable";
+@import "styles/breakpoints";
+
+.itens{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    width: 100%;
+}
