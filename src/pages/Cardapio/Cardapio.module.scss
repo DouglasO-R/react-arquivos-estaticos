@@ -1,77 +1,19 @@
 @import "styles/variable";
 @import "styles/breakpoints";
 
-.menu {
-    padding: 1.25rem $padding-horizontal;
-
-    @media (max-width: $desktop_xsm) {
-        padding: 1.25rem $padding-mobile;
-    }
-
-    @media (max-width: $desktop_xsm) and (max-width: $desktop_sm) {
-        padding: 1.25rem $padding-horizontal-sm;
-    }
-
-    @media (max-width: $desktop_sm) and (max-width: $desktop_md) {
-        padding: 1.25rem $padding-horizontal-md;
-    }
-}
-
-.header {
-    height: 18.75rem;
-    background-image: url("/assets/images/header.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-
-    padding: 0 $padding-horizontal;
-
-    @media (max-width: $desktop_xsm) {
-        padding: 0 $padding-mobile;
-    }
-
-    @media (max-width: $desktop_xsm) and (max-width: $desktop_sm) {
-        padding: 0 $padding-horizontal-sm;
-    }
-
-    @media (max-width: $desktop_sm) and (max-width: $desktop_md) {
-        padding: 0 $padding-horizontal-md;
-    }
-
-    &__text {
-        color: white;
-        font-size: 5rem;
-        min-width: 400px;
-        width: 40%;
-    }
-}
-
 .cardapio {
-    padding: 3.125rem $padding-horizontal;
-    @media (max-width: $desktop_xsm) {
-      padding: 3.125rem $padding-mobile;
-    }
-    @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
-      padding: 3.125rem $padding-horizontal-sm;
-    }
-    @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
-      padding: 3.125rem $padding-horizontal-md;
-    }
-    &__titulo {
-      color: $dark;
-      font-size: 3rem;
-      margin-bottom: 30px;
-    }
+  &__titulo {
+    color: $dark;
+    font-size: 3rem;
+    margin-bottom: 30px;
+  }
 
-    &__filtros {
-        align-items: center;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin-bottom: 30px;
-        width: 100%;
-      }
+  &__filtros {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    width: 100%;
+  }
 }

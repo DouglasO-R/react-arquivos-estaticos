@@ -1,5 +1,5 @@
-import styles from "./Buscador.module.scss";
-import { CgSearch } from "react-icons/cg";
+import styles from './Buscador.module.scss';
+import { CgSearch } from 'react-icons/cg';
 type Props = {
     search: string;
     handleSearch: React.Dispatch<React.SetStateAction<string>>
@@ -15,9 +15,9 @@ export function Buscador({ search, handleSearch }: Props) {
                 placeholder="Buscar"
             />
             <CgSearch
-            size={20}
-            color='#4C4D5E'
+                size={20}
+                color='#4C4D5E'
             />
         </div>
-    )
+    );
 }

@@ -1,6 +1,6 @@
-import classNames from "classnames";
-import filtros from "./filtros.json";
-import styles from "./Filtros.module.scss";
+import classNames from 'classnames';
+import filtros from './filtros.json';
+import styles from './Filtros.module.scss';
 
 type TypeOpcao = typeof filtros[0];
 type Props = {
@@ -12,7 +12,7 @@ export function Filtros({ filtro, setFiltro }: Props) {
 
     const selecionarFiltro = (opcao: TypeOpcao) => {
         filtro === opcao.id ? setFiltro(null) : setFiltro(opcao.id);
-    }
+    };
 
     return (
         <div className={styles.filtros}>

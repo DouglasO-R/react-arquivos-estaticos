@@ -1,0 +1,35 @@
+@import "styles/variable";
+@import "styles/breakpoints";
+
+
+.header {
+    height: 18.75rem;
+    background-image: url("/assets/images/header.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding: 0 $padding-horizontal;
+
+    @media (max-width: $desktop_xsm) {
+        padding: 0 $padding-mobile;
+    }
+
+    @media (max-width: $desktop_xsm) and (max-width: $desktop_sm) {
+        padding: 0 $padding-horizontal-sm;
+    }
+
+    @media (max-width: $desktop_sm) and (max-width: $desktop_md) {
+        padding: 0 $padding-horizontal-md;
+    }
+
+    &__text {
+        color: white;
+        font-size: 5rem;
+        min-width: 400px;
+        width: 40%;
+    }
+}
